@@ -1,3 +1,6 @@
+float rectFaceX, rectFaceY, rectFaceWidth, rectFaceHeight;
+float faceX, faceY, faceDiameter;
+//
 void faceSetup() {
   //face: inscribing a circle in a square (i.e. logical rectangle)
   //start from center of display

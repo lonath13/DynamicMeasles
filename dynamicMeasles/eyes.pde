@@ -1,3 +1,4 @@
-void eyes() {}//end eyes
+void eyes() {
+}//end eyes
 //
 //end eyes subprogram
