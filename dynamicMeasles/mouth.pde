@@ -1,39 +1,15 @@
-//Global Variables
-int appWidth, appHeight;
-int reset=1;
+int mouthOpen;
+float mouthX1, mouthY1, mouthX2, mouthY2;
 //
-void setup() {
-  //Display & Orientation
-  size(600, 400); 
-  displayOrientation();
-  appWidth = width;
-  appHeight = height;
-  //
-  population();
-  //Theme: i.e. Face (will work in portrait and landscape)
-  faceSetup();
-  //Background Image (could be in draw too)
-}//End setup
+void mouth() {
+  int mouthWidth = int ( mouthX2 - mouthX1 ); //length=end-beginning
+  int mouthHeight = mouthOpen;
+  //rect(mouthX1-mouthHeight*1/2, mouthY1-mouthHeight*1/2, mouthWidth+mouthOpen, mouthHeight);
+  strokeWeight(mouthOpen); //testing: 100=400/4, mouthOpen=height*1/4
+  line(mouthX1, mouthY1, mouthX2, mouthY2);
+  strokeWeight(reset); //reset to 1 pixel
+  //comparison rect() line only, no caps, no strokeWeight
+  //rect(mouthX1, mouthY1, mouthWidth, mouthHeight); 
+} //End mouth
 //
-void draw() {
-  //OS System Button
-  //Start Button | Measles Reset Button
-  //Theme: face & measles with different sizes and colours
-  measlesDynamic();
-  eyes();
-  mouth();
-  nose();
-}//End draw
-//
-void keyPressed() {
-  //KeyBoard Shortcuts
-}//End keyPressed
-//
-void mousePressed() {
-  //OS System Button
-  //Start Button
-  //Quit Button
-  //Night Mode
-}//End mousePressed
-//
-//End MAIN Program
+//End Mouth Subprogram
