@@ -2,10 +2,10 @@ float rectFaceX, rectFaceY, rectFaceWidth, rectFaceHeight;
 float faceX, faceY, faceDiameter;
 //
 void faceSetup() {
-  //face: inscribing a circle in a square (i.e. logical rectangle)
-  //start from center of display
-  rect(rectfaceX, rectFaceY, rectFaceWidth, rectFaceHeight);
-  circle(faceX, FaceY, FaceWidth, FaceHeight);
-}//end faceSetup
+  //Face: inscribing a cirlcle in a square (i.e. logical rectangle)
+  //Start from center of display
+  rect(rectFaceX, rectFaceY, rectFaceWidth, rectFaceHeight);
+  ellipse(faceX, faceY, faceDiameter, faceDiameter);
+} //End faceSetup
 //
-//end face subprogram
+//End Face Subprogram

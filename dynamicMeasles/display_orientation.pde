@@ -1,6 +1,6 @@
 Boolean landscape=false, portrait=false;
 //
-void displayorientation() {
+void displayOrientation() {
   //display Orientation algorithym
   landscape = true; //hardcoded for now
   //
