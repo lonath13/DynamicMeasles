@@ -1,6 +1,8 @@
 //Global Variables
 int appWidth, appHeight;
 int reset=1;
+color resetWhite=#FFFFFF;
+Boolean nightMode=false; //Basic Night Mode only changes measles
 //
 void setup() {
   //Display & Orientation
@@ -27,6 +29,14 @@ void draw() {
 //
 void keyPressed() {
   //KeyBoard Shortcuts
+  if ( key=='N' | key=='n' ) { 
+    if ( nightMode==false ) {
+      nightMode=true;
+    } else {
+      nightMode=false;
+    }
+  }
+  println("Night Mode Feature", nightMode);
 }//End keyPressed
 //
 void mousePressed() {
