@@ -1,12 +1,12 @@
 //Global Variables
 int appWidth, appHeight;
 int reset=1;
-color resetWhite=#FFFFFF;
+color resetWhite=#FFFFFF ,measlesColour2=#EAEA11 ;
 Boolean nightMode=false; //Basic Night Mode only changes measles
 //
 void setup() {
   //Display & Orientation
-  size(600, 400); 
+  size(1000, 800); 
   displayOrientation();
   appWidth = width;
   appHeight = height;
